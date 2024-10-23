@@ -1,0 +1,49 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "dev-utilities",
+  "title": "Dev Utilities",
+  "description": "A collection of utilities for developers.",
+  "icon": "main-icon.png",
+  "author": "fernando_barrios",
+  "categories": [
+    "Applications",
+    "Developer Tools",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "base64",
+      "title": "Base64 Decode and Encode",
+      "subtitle": "Base64",
+      "description": "Decode and Encode Base64 strings.",
+      "mode": "view"
+    },
+    {
+      "name": "jwt",
+      "title": "JWT Parser",
+      "subtitle": "JWT",
+      "description": "Parse JSON Web Tokens.",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.84.3",
+    "@raycast/utils": "^1.18.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^1.0.11",
+    "@types/node": "20.8.10",
+    "@types/react": "18.3.3",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
